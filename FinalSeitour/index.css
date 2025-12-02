@@ -1,0 +1,150 @@
+  main {
+      display: grid;
+      grid-template-columns: 25% auto;
+      grid-template-rows: 4em 65em 6em;
+      grid-template-areas: "encabezado encabezado" "menulateral contenido" "pie pie";
+
+  }
+
+  section {
+      grid-area: menulateral;
+  }
+
+
+  article {
+      grid-area: contenido;
+      border: 5px black double;
+      font-size: large;
+      padding: 10px;
+      margin: 5px;
+      height: 62em;
+  }
+
+  .cancha {
+      columns: 2;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+  }
+
+  body {
+      text-align: center;
+      background-color: aquamarine;
+  }
+
+  .margen {
+      margin-top: 0;
+  }
+
+  .efp7 {
+      width: 200px;
+      height: 80px;
+  }
+
+  .imagenD {
+      width: 250px;
+      height: 200px;
+  }
+
+  .canchaimg {
+      width: 450px;
+      height: 200px;
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+
+  }
+
+  .imgcancha {
+      display: flex;
+      height: 200px;
+      width: auto;
+  }
+
+  header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 200px;
+      font-size: xx-large;
+      margin: 20px;
+      border: 5px black solid;
+      padding: 15px;
+      justify-content: center;
+      gap: 10px;
+      grid-area: encabezado;
+  }
+
+  .idea {
+      color: crimson;
+      border: 5px rgb(237, 100, 100) dashed;
+      padding: 5px;
+      font-size: x-large;
+      margin: 15px;
+      height: 21em;
+      width: 12em;
+  }
+
+  .gestion {
+      text-align: left;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(24, 24, 90);
+      border: 5px blue dotted;
+      padding: 5px;
+      font-size: larger;
+      margin: 15px;
+      height: 30em;
+      width: 15em;
+  }
+
+  .dentrofuera {
+      text-align: center;
+  }
+
+  button {
+      width: 250px;
+      height: 30px;
+      font-size: large;
+      background-color: greenyellow;
+  }
+
+  footer {
+      background-color: aliceblue;
+      border: 5px cornflowerblue double;
+      padding: 15px;
+      font-size: larger;
+      margin: 20px;
+      display: flex;
+      grid-area: pie;
+      justify-content: center;
+  }
+
+  .columna {
+      columns: 3;
+      display: flex;
+  }
+
+  .extra {
+      justify-content: center;
+      gap: 200px;
+      display: flex;
+  }
+
+  @media (max-width: 1000px) {
+
+      /* adaptacion a pantallas pequeñas */
+      .columna {
+          flex-direction: column;
+      }
+  }
+
+  @media (max-width: 1000px) {
+
+      /* adaptacion a pantallas pequeñas */
+      .extra {
+          flex-direction: column;
+      }
+  }

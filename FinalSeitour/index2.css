@@ -1,0 +1,172 @@
+  main {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 4em 75em 6em;
+      grid-template-areas: "encabezado encabezado" "contenido menulateral " "pie pie";
+
+  }
+
+  section {
+      grid-area: menulateral;
+    border: 5px black double;
+      font-size: xx-large;
+      padding: 10px;
+      margin: 5px;
+  }
+
+dd{
+    text-align: left;
+}
+.float{
+    float: right;
+    height: 300px;
+    width: 300px;
+    display: flex;
+}
+.float:hover{
+    transform:scale(2,2)
+}
+  @media (max-width: 1000px) {
+
+      /* adaptacion a pantallas pequeñas */
+      .float {
+          flex-direction: column;
+      }
+  }
+
+  .float2{
+    float: right;
+    height: 250px;
+    width: 280px;
+    display: flex;
+
+  }
+    @media (max-width: 1000px) {
+
+      /* adaptacion a pantallas pequeñas */
+      .float2 {
+          flex-direction: column;
+      }
+  }
+
+.float3{
+    height: 300px;
+    width: 600px;
+    display: flex;
+    padding: 15px;
+}
+
+  article {
+      grid-area: contenido;
+      border: 5px black double;
+      font-size: large;
+      padding: 10px;
+      margin: 5px;
+  }
+
+  body {
+      text-align: center;
+      background-color: aquamarine;
+  }
+
+  .margen {
+      margin-top: 0;
+  }
+
+  .efp7 {
+      width: 200px;
+      height: 80px;
+  }
+
+  .imagenD {
+      width: 250px;
+      height: 200px;
+  }
+
+  .canchaimg {
+      width: 450px;
+      height: 200px;
+      align-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 15px;
+
+  }
+
+  .imgcancha {
+      display: flex;
+      height: 200px;
+      width: auto;
+  }
+
+  header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 200px;
+      font-size: xx-large;
+      margin: 20px;
+      border: 5px black solid;
+      padding: 15px;
+      justify-content: center;
+      gap: 10px;
+      grid-area: encabezado;
+  }
+
+  .gestion {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 5px;
+      font-size: x-large;
+      margin: 15px;
+  }
+
+  .dentrofuera {
+      text-align: center;
+  }
+
+  button {
+      width: 250px;
+      height: 30px;
+      font-size: xx-large;
+      background-color: greenyellow;
+  }
+
+  footer {
+      background-color: aliceblue;
+      border: 5px cornflowerblue double;
+      padding: 15px;
+      font-size: larger;
+      margin: 20px;
+      display: flex;
+      grid-area: pie;
+      justify-content: center;
+  }
+
+  .columna {
+      columns: 3;
+      display: flex;
+  }
+
+  .extra {
+      justify-content: center;
+      gap: 200px;
+      display: flex;
+  }
+
+  @media (max-width: 1000px) {
+
+      /* adaptacion a pantallas pequeñas */
+      .columna {
+          flex-direction: column;
+      }
+  }
+
+  @media (max-width: 1000px) {
+
+      /* adaptacion a pantallas pequeñas */
+      .extra {
+          flex-direction: column;
+      }
+  }
