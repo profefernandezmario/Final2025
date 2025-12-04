@@ -213,7 +213,7 @@ footer{
     grid-template-columns: auto auto;
     background-color: rgb(94, 94, 94);
     opacity: 50%;
-    font-size:small;
+    font-size:medium;
     color: aliceblue;
 }
 .img{
@@ -222,5 +222,5 @@ footer{
   object-fit: cover;
 }
 .info{
-  font-size: small;
+  font-size: medium;
 }
