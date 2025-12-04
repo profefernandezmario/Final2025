@@ -1,150 +1,243 @@
-  main {
-      display: grid;
-      grid-template-columns: 25% auto;
-      grid-template-rows: 4em 65em 6em;
-      grid-template-areas: "encabezado encabezado" "menulateral contenido" "pie pie";
+main {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-areas: "encabezado encabezado" "menulateral contenido" "pie pie";
+    gap: 10px;
+}
 
-  }
+section {
+    grid-area: menulateral;
+}
 
-  section {
-      grid-area: menulateral;
-  }
+article {
+    grid-area: contenido;
+    columns: 2;
+    border: 5px black double;
+    font-size: x-large;
+    padding: 10px;
+    margin: 5px;
+}
 
+.cancha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-  article {
-      grid-area: contenido;
-      border: 5px black double;
-      font-size: large;
-      padding: 10px;
-      margin: 5px;
-      height: 62em;
-  }
+}
 
-  .cancha {
-      columns: 2;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+body {
+    text-align: center;
+    background-color: aquamarine;
+}
 
-  }
+.efp7 {
+    width: 200px;
+    height: 80px;
+}
 
-  body {
-      text-align: center;
-      background-color: aquamarine;
-  }
+.imagenD {
+    width: 250px;
+    height: 200px;
+}
 
-  .margen {
-      margin-top: 0;
-  }
+.canchaimg {
+    width: 450px;
+    height: auto;
+    align-content: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
 
-  .efp7 {
-      width: 200px;
-      height: 80px;
-  }
+}
 
-  .imagenD {
-      width: 250px;
-      height: 200px;
-  }
+.imgcancha {
+    width: 500px;
+    height: auto;
+    align-content: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 5s;
+}
 
-  .canchaimg {
-      width: 450px;
-      height: 200px;
-      align-content: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 15px;
+.imgcancha:hover {
+    transform: scale(1.5, 2)
+}
 
-  }
+.icono {
+    width: 30px;
+    height: auto;
+}
 
-  .imgcancha {
-      display: flex;
-      height: 200px;
-      width: auto;
-  }
+@media (max-width: 1000px) {
 
-  header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 200px;
-      font-size: xx-large;
-      margin: 20px;
-      border: 5px black solid;
-      padding: 15px;
-      justify-content: center;
-      gap: 10px;
-      grid-area: encabezado;
-  }
+    /* adaptacion a pantallas pequeñas */
+    .imgcancha:hover {
+        transform: scale(1, 1.5)
+    }
+}
 
-  .idea {
-      color: crimson;
-      border: 5px rgb(237, 100, 100) dashed;
-      padding: 5px;
-      font-size: x-large;
-      margin: 15px;
-      height: 21em;
-      width: 12em;
-  }
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    font-size: x-large;
+    margin: 20px;
+    border: 5px black solid;
+    padding: 15px;
+    justify-content: center;
+    gap: 20px;
+    grid-area: encabezado;
+}
 
-  .gestion {
-      text-align: left;
-      font-family: Arial, Helvetica, sans-serif;
-      color: rgb(24, 24, 90);
-      border: 5px blue dotted;
-      padding: 5px;
-      font-size: larger;
-      margin: 15px;
-      height: 30em;
-      width: 15em;
-  }
+.idea {
+    color: crimson;
+    border: 5px crimson dashed;
+    padding: 5px;
+    font-size: x-large;
+    margin: 15px;
+    height: auto;
+    width: 90%;
+    max-width: 400px;
+}
 
-  .dentrofuera {
-      text-align: center;
-  }
+.idea:hover {
+    animation-name: cambia-color;
+    animation-duration: 10s;
+}
 
-  button {
-      width: 250px;
-      height: 30px;
-      font-size: large;
-      background-color: greenyellow;
-  }
+@keyframes cambia-color {
+    from {
+        color: red;
+        border: 5px red dashed;
+    }
 
-  footer {
-      background-color: aliceblue;
-      border: 5px cornflowerblue double;
-      padding: 15px;
-      font-size: larger;
-      margin: 20px;
-      display: flex;
-      grid-area: pie;
-      justify-content: center;
-  }
+    to {
+        color: blue;
+        border: 5px blue dotted;
+    }
+}
 
-  .columna {
-      columns: 3;
-      display: flex;
-  }
+.gestion {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    border: 5px blue dotted;
+    padding: 5px;
+    font-size: x-large;
+    margin: 15px;
+    height: auto;
+    width: 90%;
+    max-width: 400px;
+}
 
-  .extra {
-      justify-content: center;
-      gap: 200px;
-      display: flex;
-  }
+.gestion:hover {
+    animation-name: cambia-color2;
+    animation-duration: 10s;
+}
 
-  @media (max-width: 1000px) {
+@keyframes cambia-color2 {
+    from {
+        color: blue;
+        border: 5px blue dotted;
+    }
 
-      /* adaptacion a pantallas pequeñas */
-      .columna {
-          flex-direction: column;
-      }
-  }
+    to {
+        color: red;
+        border: 5px red dashed;
+    }
+}
 
-  @media (max-width: 1000px) {
+.dentrofuera {
+    text-align: center;
+}
 
-      /* adaptacion a pantallas pequeñas */
-      .extra {
-          flex-direction: column;
-      }
-  }
+button {
+    width: 250px;
+    height: 30px;
+    font-size: large;
+    background-color: greenyellow;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: aliceblue;
+    border: 5px cornflowerblue double;
+    padding: 15px;
+    font-size: larger;
+    margin: 20px;
+    display: flex;
+    grid-area: pie;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 30px;
+}
+
+.extra {
+    justify-content: center;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 780px) {
+
+    /* adaptacion a pantallas pequeñas */
+    .columna {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 900px) {
+
+    /* adaptacion a pantallas pequeñas */
+    .extra {
+        flex-direction: column;
+    }
+
+    .icono {
+        width: 20px;
+        height: auto;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "encabezado" "menulateral" "contenido" "pie";
+    }
+
+    section {
+        font-size: medium;
+    }
+
+    article {
+        font-size: medium;
+        columns: 1;
+    }
+
+    .idea,
+    .gestion {
+        width: 95%;
+        max-width: none;
+        margin: 15px;
+        justify-content: center;
+    }
+}
