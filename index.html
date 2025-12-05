@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examenes Finales 2025 - Desarrollador Web JR.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    h3 {
+      margin-top: 10px;
+      font-weight: normal;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .menu-item {
+      width: 150px;
+      height: 150px;
+      background: #fff;
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.1);
+      background: #e8f5e9;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #4CAF50;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Examenes Finales 2025 - Desarrollador Web JR.</h1>
+    <h3>Menu Principal</h3>
+  </header>
+
+  <section class="menu">
+    <div class="menu-item" onclick="goTo('https://pagina1.com')">Página 1</div>
+    <div class="menu-item" onclick="goTo('https://pagina2.com')">Página 2</div>
+    <div class="menu-item" onclick="goTo('https://pagina3.com')">Página 3</div>
+    <div class="menu-item" onclick="goTo('https://pagina4.com')">Página 4</div>
+    <div class="menu-item" onclick="goTo('https://pagina5.com')">Página 5</div>
+    <div class="menu-item" onclick="goTo('https://pagina6.com')">Página 6</div>
+    <div class="menu-item" onclick="goTo('https://pagina7.com')">Página 7</div>
+  </section>
+
+  <footer>
+    <p>Contacto: tuemail@ejemplo.com | Tel: +54 123 456 789</p>
+    <p>
+      Sígueme en:
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://twitter.com" target="_blank">Twitter</a> |
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
+  <script>
+    function goTo(url) {
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>
