@@ -1,0 +1,100 @@
+.container {
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+}
+
+.img-fecha {
+    display: block;
+    margin: 5px auto;
+    max-height: 95px;
+}
+
+.margin {
+    margin-top: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.media-wrapper_image img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 100%;
+}
+
+pre {
+    text-align: center;
+}
+
+.FotPrincipal {
+    text-align: center;
+}
+
+.efp {
+    width: 5rem;
+    height: 3rem;
+}
+
+.imgP {
+    width: 250px;
+    height: 5rem;
+}
+
+.logo {
+    height: 3.5rem;
+    width: 6rem;
+}
+
+footer {
+    background-color: #f5f5f5;
+}
+
+nav {
+    display: flex;
+    background-color: #f31a1a;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.titl {
+    font-weight: 700;
+    margin: 0 0 10px;
+    padding: 5px 0;
+}
+
+nav a {
+    color: #dadada;
+    margin: 0;
+}
+
+nav a:hover {
+    color: #a50505;
+}
+
+@media (max-width: 480px) {
+    .html {
+        padding: 1rem;
+    }
+
+    .img-noticia {
+        width: 200;
+        height: 200;
+    }
+    
+}  
+
+.oswald-fuente {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
