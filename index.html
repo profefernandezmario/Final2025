@@ -7,40 +7,68 @@
   <meta name="description" content="Examenes Finales 2025 para el curso de Desarrollador Web JR.">
   <meta name="author" content="M.F.P. Mario R. Fernández">
   <title>Examenes Finales 2025 - Desarrollador Web JR.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>Examenes Finales 2025 - Desarrollador Web JR.</h1>
-    <h3>Ordenados Alfabéticamente</h3>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">📚</div>
+      <div>
+        <h1>Exámenes Finales 2025</h1>
+        <h4>Desarrollador Web JR. — Ordenados alfabéticamente</h4>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button class="btn-outline" onclick="openContact()">Contacto</button>
+    </div>
   </header>
 
-  <section class="menu">
-    <div class="menu-item" onclick="goTo('finalCorrea/')">Correa</div>
-    <div class="menu-item" onclick="goTo('finalDriussi/')">Driussi</div>
-    <div class="menu-item" onclick="goTo('finalGatti/')">Gatti</div>
-    <div class="menu-item" onclick="goTo('finalMendez/')">Mendez</div>
-    <div class="menu-item" onclick="goTo('finalSeitour/')">Seitour</div>
-    <div class="menu-item" onclick="goTo('finalSpila/')">Spila</div>
-    <div class="menu-item" onclick="goTo('finalVega/')">Vega</div>
-    <div class="menu-item" onclick="goTo('finalValenti/')">Valenti</div>
-  </section>
+  <main class="container">
+    <section class="hero">
+      <h2>Accede a los finales</h2>
+      <p>Material ordenado por apellido. Haz clic en una tarjeta para abrir en una nueva pestaña.</p>
+    </section>
 
-  <footer>
-    <p>Contacto: profe.fernandezmario@gmail.com | Tel: +54 362 4096688</p>
-    <p>
-      Sígueme en:
-      <a href="https://www.instagram.com/mf.servicio.tecnico/" target="_blank">Instagram</a> |
-      <a href="https://www.facebook.com/mfpmariofernandez" target="_blank">Facebook</a>
-     | Ultima edición 10/12/2025 - 10hs</p>
+    <section class="menu grid">
+      <div class="menu-item" onclick="goTo('finalCorrea/')">Correa</div>
+      <div class="menu-item" onclick="goTo('finalDriussi/')">Driussi</div>
+      <div class="menu-item" onclick="goTo('finalGatti/')">Gatti</div>
+      <div class="menu-item" onclick="goTo('finalMendez/')">Mendez</div>
+      <div class="menu-item" onclick="goTo('finalSeitour/')">Seitour</div>
+      <div class="menu-item" onclick="goTo('finalSpila/')">Spila</div>
+      <div class="menu-item" onclick="goTo('finalVega/')">Vega</div>
+      <div class="menu-item" onclick="goTo('finalValenti/')">Valenti</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>Contacto: profe.fernandezmario@gmail.com | Tel: +54 362 4096688</p>
+      <p>Sígueme:
+        <a href="https://www.instagram.com/mf.servicio.tecnico/" target="_blank">Instagram</a> |
+        <a href="https://www.facebook.com/mfpmariofernandez" target="_blank">Facebook</a>
+      </p>
+    </div>
+    <div class="meta">Última edición 10/12/2025 - 10hs</div>
   </footer>
 
   <script>
     function goTo(url) {
       window.open(url, "_blank");
     }
+    function openContact() {
+      window.location.href = "mailto:profe.fernandezmario@gmail.com";
+    }
+    // small keyboard accessibility: abrir primer elemento con Enter
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const first = document.querySelector('.menu .menu-item');
+        if (first) first.click();
+      }
+    });
   </script>
 
 </body>
