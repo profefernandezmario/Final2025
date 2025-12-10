@@ -1,0 +1,54 @@
+section h3, section h4{
+    margin-top: 10px;
+    color: brown;
+}
+
+section {
+    color: aliceblue;
+    line-height: 1.6;
+}
+
+section ol, section  ul{
+    margin-left: 25px;
+}
+
+ol {
+    list-style: upper-alpha;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol, ul{
+    line-height: 1.6;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th{
+    background-color: chocolate;
+    color: black;
+    padding: 5px;
+}
+
+table td{
+    padding: 4px;
+}
+
+table tr:hover{
+    background-color: rgb(43, 40, 40);
+}
+
+.comp1{
+    text-align: center;
+}
+
+.comp1 h4{
+    text-decoration: underline;
+}
