@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- De aca hasta... -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <!-- ...hasta aca, tipografia utilizada -->
+  <!-- Link de acceso a CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Formula 1.1</title>
+</head>
+
+<body>
+  <div class="FotPrincipal" >
+    <img src="img/f1.png" class="imgP" alt="f1.png"> <!-- https://www.flaticon.es/resultados?word=f1 -->
+    <nav class="oswald-fuente">
+      <a href="index.html"><img src="img/formula.png" class="logo" alt="formula.png"></a>
+      <!-- https://www.flaticon.es/resultados?word=f1 -->
+      <a href="index.html">Noticias</a>
+      <a href="index.html#clasif">Clasificación Pilotos</a>
+      <a href="#fechas">Fechas</a>
+      <a href="#info">Más Info.</a>
+    </nav>
+  </div>
+  <main>
+
+    <div class="container">
+      <h3 id="fechas">Fechas</h3>
+      <div class=" table-responsive">
+        <table class="table  table-primary">
+          <tr>
+            <th style="color: blue;">GRAN FINAL: GP Abu Dabi:</th>
+            <th>07-12-2025</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td><b>Yas Marina</b></td>
+            <td><img src="img/abu-dhabi.jpg" class="img-fecha" alt=""></td>
+            <td><br><b>Circuito:</b> Yas Marina</br>
+              <b>Longitud:</b> 5554 metros</br>
+              <b>Curvas:</b> 21 (9 izda | 12 dcha)</br>
+              <b>Récord:</b> Max Verstappen - 1:26.103 - Año: (2021)</br>
+              <b>Ganador</b> 2024: Lando Norris</br>
+              <b>Pole 2024:</b> Lando Norris</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <pre>Viernes 5
+        6:30 - 10:00
+            </pre>
+            </td>
+            <td>
+              <pre>Sabado 6
+        7:30 - 11:00
+            </pre>
+            </td>
+            <td>
+              <pre>Domingo 7
+     Carrera: 10:00
+            </pre>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+      <h3 id="info">Más Información</h3>
+      <div>
+        <ul class="titl">
+          <li>Resultados de la F1</li>
+          <li><a href="https://tickets.formula1.com/es"
+              target="_blank"><span>Tickets</span></a></li>
+              <li><a href="https://www.espn.com.ar/deporte-motor/f1/posiciones" target="_blank"><span>
+            Posiciones</span></a>
+          </li>
+          <li><a href="https://www.formula1.com/es-ar/subscribe-to-f1-tv" target="_blank"><span>Ver en Vivo</span>
+          </a></li>
+          <li><a href="https://www.marca.com/motor/formula1/calendario.html" target="_blank"><span>Calendario F1</span>
+          </a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <br>
+
+  </main>
+</body>
+
+<footer class="bg-secondary text-white text-center py-3 w-100" style="position: static; bottom: 0; left: 0;">
+  <strong>
+    <ul class="list-unstyled mb-0">
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
+          viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+        </svg>
+        Chaco, Argentina
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+          viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+        </svg>
+        +54 9 3624 728076
+      </li>
+      <li>
+        &copy; EFP Nº7 - Stefano Spila.
+       <li>
+          <svg xmlns="http://www.w3.org/2000/svg" 
+          width="16"
+          height="16"
+          class="bi bi-instagram"
+          viewBox="0 0 448 512"
+          >
+          <path fill="currentColor" d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          <a href="https://www.instagram.com/stefa.spl/" target="_blank" style="color: aliceblue;">stefa.spl</a> 
+        </li>
+
+      <a href="https://www.instagram.com/efp7ok/?hl=es" target="_blank"><img src="img/efp.jpg" class="efp" alt=""></a>
+    </ul>
+  </strong>
+</footer>
+
+</html>
